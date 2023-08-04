@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import './DeletePost.css';
 
 
 const DeletePost = () => {
@@ -38,12 +39,14 @@ const DeletePost = () => {
   }
 
   return (
-    <div>
+    <div className='container'>
+      <div className='delete-post-section'>
       <h2>Delete Post</h2>
       <p>Title: {post.title}</p>
       <p>Author: {post.author}</p>
       {/* Display other post details here */}
       <button onClick={handleDelete}>Delete</button>
+      </div>
     </div>
   );
 };

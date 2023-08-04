@@ -64,6 +64,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import PostFilter from './PostFilter';
+import './PostList.css';
 
 const PostList = () => {
   const [posts, setPosts] = useState([]);
@@ -115,7 +116,8 @@ const PostList = () => {
   };
 
   return (
-    <div>
+    <div className='post-item'>
+      <div className='headmain'>Blogging Website</div>
       <h2>Post List</h2>
       <PostFilter handleFilterChange={handleFilterChange} />
       {filteredPosts.map((post) => (

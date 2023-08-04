@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams} from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import './EditPost.css';
 
 const EditPost = () => {
   const [post, setPost] = useState(null);
@@ -57,9 +58,9 @@ const EditPost = () => {
   }
 
   return (
-    <div>
+    <div className='container'>
       <h2>Edit Post</h2>
-      <form onSubmit={handleSubmit}>
+      <form onSubmit={handleSubmit} className='edit-post-form'>
         <input
           type="text"
           placeholder="Title"

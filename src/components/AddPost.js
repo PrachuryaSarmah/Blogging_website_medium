@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './AddPost.css';
 
 const AddPost = () => {
   const [title, setTitle] = useState('');
@@ -34,9 +35,9 @@ const AddPost = () => {
   };
 
   return (
-    <div>
+    <div className='container'>
       <h2>Add New Post</h2>
-      <form onSubmit={handleSubmit}>
+      <form className='add-post-form'    onSubmit={handleSubmit}>
         <input
           type="text"
           placeholder="Title"

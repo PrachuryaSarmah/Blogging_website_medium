@@ -1,0 +1,111 @@
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  /* Post item container */
+  .post-item {
+    border: 3px solid black;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .post-item:hover {
+    transform: translateY(-3px);
+  }
+  .headmain {
+    margin: 0;
+    font-size: 50px;
+    color: black;
+    display: flex;
+    font-weight: bold;
+    background-color: lightblue;
+    height: 100px;
+    padding: 15px;
+    justify-content: center;
+  }
+  
+  .post-item h2 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+    color: blue;
+  }
+  
+  .post-item p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
+  /* Filter section */
+  .filter-section {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .filter-section h2 {
+    margin-top: 0;
+    margin-bottom: 25px;
+    font-size: 1.6rem;
+    color: blue;
+    
+  }
+  
+  .filter-section label {
+    display: block;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    color: darkblue;
+  }
+  
+  .filter-section input[type='number'],
+  .filter-section input[type='text'],
+  .filter-section input[type='date'] {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .filter-section button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.2s ease-in-out;
+  }
+  
+  .filter-section button:hover {
+    background-color: black;
+    color:white;
+  }
+  
+  /* Add a separator line between filter section and post list */
+  .separator {
+    margin-top: 40px;
+    border-top: 1px solid #ccc;
+  }
+  
+  /* Add some spacing to improve visual appearance */
+  .margin-bottom-10 {
+    margin-bottom: 10px;
+  }
+  
+  .margin-top-10 {
+    margin-top: 10px;
+  }
+  

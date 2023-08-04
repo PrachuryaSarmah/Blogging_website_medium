@@ -50,7 +50,7 @@ const PostFilter = ({ handleFilterChange }) => {
   };
 
   return (
-    <div>
+    <div className='filter-section'>
       <h2>Filter Posts</h2>
       <label>
         Minimum Likes:

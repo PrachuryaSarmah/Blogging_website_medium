@@ -18,11 +18,11 @@ const App = () => {
     <Routes>
       
         
-          <Route  path="/" element={PostList } />
-          <Route  path="/add" element={AddPost} />
-          <Route  path="/edit/:postId" element={EditPost} />
-          <Route  path="/delete/:postId" element={DeletePost} />
-          <Route  path="/search" element={SearchPost} />
+          <Route  path="/" element={<PostList />} />
+          <Route  path="/add" element={<AddPost/>} />
+          <Route  path="/edit/:postId" element={<EditPost/>} />
+          <Route  path="/delete/:postId" element={<DeletePost/>} />
+          <Route  path="/search" element={<SearchPost/>} />
         
       
     </Routes>
