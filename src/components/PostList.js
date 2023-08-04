@@ -65,6 +65,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import PostFilter from './PostFilter';
 import './PostList.css';
+import { Link } from 'react-router-dom';
 
 const PostList = () => {
   const [posts, setPosts] = useState([]);
@@ -118,6 +119,10 @@ const PostList = () => {
   return (
     <div className='post-item'>
       <div className='headmain'>Blogging Website</div>
+      <Link className='linkingit' to="/top">Top Posts</Link> 
+      <Link className='linkingit' to="/recommended">Recommended Post</Link> 
+      <Link className='linkingit' to="/add">Add a post</Link> 
+      <Link className='linkingit' to="/search">Search a Post</Link> 
       <h2>Post List</h2>
       <PostFilter handleFilterChange={handleFilterChange} />
       {filteredPosts.map((post) => (
@@ -127,7 +132,8 @@ const PostList = () => {
           <p>Date: {post.dateTime}</p>
           <p>Likes: {post.likes}</p>
           <p>Comments: {post.comments}</p>
-          {/* Display other post details here */}
+          <p>Comments: {post.topic}</p>
+          <Link to={`/more-posts-by-author/${post.author}`}>More Posts by {post.author}</Link>
         </div>
       ))}
     </div>

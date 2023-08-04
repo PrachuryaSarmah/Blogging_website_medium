@@ -26,7 +26,7 @@ const DeletePost = () => {
   const handleDelete = async () => {
     try {
       await axios.delete(`YOUR_ROR_API_ENDPOINT/posts/${postId}`);
-      console.log('Post deleted successfully.');
+      alert('Post deleted successfully!');
       // Redirect to the post list after successful deletion
       navigate.push('/');
     } catch (error) {
@@ -41,11 +41,15 @@ const DeletePost = () => {
   return (
     <div className='container'>
       <div className='delete-post-section'>
-      <h2>Delete Post</h2>
-      <p>Title: {post.title}</p>
-      <p>Author: {post.author}</p>
-      {/* Display other post details here */}
-      <button onClick={handleDelete}>Delete</button>
+        <h2>Delete Post</h2>
+        <p>Title: {post.title}</p>
+        <p>Author: {post.author}</p>
+        <p>Date: {post.dateTime}</p>
+        <p>Likes: {post.likes}</p>
+        <p>Comments: {post.comments}</p>
+        <p>Comments: {post.topic}</p>
+
+        <button onClick={handleDelete}>Delete</button>
       </div>
     </div>
   );

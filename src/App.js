@@ -11,6 +11,10 @@ import AddPost from './components/AddPost';
 import EditPost from './components/EditPost';
 import DeletePost from './components/DeletePost';
 import SearchPost from './components/SearchPost';
+import TopPost from './components/TopPost';
+import RecommendedPost from './components/RecommendedPost'
+import MorePostsByAuthor from './components/MorePostsByAuthor'
+
 import './App.css';
 
 const App = () => {
@@ -20,9 +24,12 @@ const App = () => {
         
           <Route  path="/" element={<PostList />} />
           <Route  path="/add" element={<AddPost/>} />
+          {/* <Route path="/add/:postId?" element={<AddPost/>} /> */}
           <Route  path="/edit/:postId" element={<EditPost/>} />
           <Route  path="/delete/:postId" element={<DeletePost/>} />
           <Route  path="/search" element={<SearchPost/>} />
+          <Route  path="/top" element={<TopPost/>} /> 
+          <Route  path="/recommended" element={<RecommendedPost/>} /> 
         
       
     </Routes>

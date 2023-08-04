@@ -1,0 +1,38 @@
+/* MorePostsByAuthor.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .postitem {
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: white;
+  }
+  
+  .posttitle {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .postauthor {
+    font-size: 14px;
+    color: black;
+  }
+  
+  .link-to-post {
+    display: block;
+    margin-top: 10px;
+    color: blue;
+    text-decoration: none;
+  }
+  
+  .link-to-post:hover {
+    text-decoration: underline;
+    color:lightblue;
+  }
+  
