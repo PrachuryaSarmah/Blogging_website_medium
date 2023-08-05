@@ -1,0 +1,70 @@
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .drafts-section {
+    margin-top: 20px;
+  }
+  
+  .draft-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .draft-form input,
+  .draft-form textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .draft-form button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .draft-form button:hover {
+    background-color: black;
+  }
+  
+  .saved-drafts {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .saved-drafts li {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f8f8f8;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .saved-drafts h4 {
+    margin: 0;
+  }
+  
+  .saved-drafts p {
+    margin-top: 5px;
+  }
+  
+  .saved-drafts button {
+    padding: 6px 12px;
+    background-color: #dc3545;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .saved-drafts button:hover {
+    background-color: #c82333;
+  }
+  

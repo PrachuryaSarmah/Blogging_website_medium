@@ -12,8 +12,11 @@ import EditPost from './components/EditPost';
 import DeletePost from './components/DeletePost';
 import SearchPost from './components/SearchPost';
 import TopPost from './components/TopPost';
-import RecommendedPost from './components/RecommendedPost'
-import MorePostsByAuthor from './components/MorePostsByAuthor'
+import RecommendedPost from './components/RecommendedPost';
+import MorePostsByAuthor from './components/MorePostsByAuthor';
+import Drafts from './components/Drafts';
+import PaymentForm from './components/PaymentForm';
+
 
 import './App.css';
 
@@ -30,6 +33,8 @@ const App = () => {
           <Route  path="/search" element={<SearchPost/>} />
           <Route  path="/top" element={<TopPost/>} /> 
           <Route  path="/recommended" element={<RecommendedPost/>} /> 
+          <Route  path="/drafts" element={<Drafts/>} /> 
+          <Route  path="/payment" element={<PaymentForm/>} /> 
         
       
     </Routes>
