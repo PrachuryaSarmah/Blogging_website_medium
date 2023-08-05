@@ -134,7 +134,7 @@ const PostList = () => {
           <p>Date: {post.dateTime}</p>
           <p>Likes: {post.likes}</p>
           <p>Comments: {post.comments}</p>
-          <p>Comments: {post.topic}</p>
+          <p>Topic: {post.topic}</p>
           <Link to={`/more-posts-by-author/${post.author}`}>More Posts by {post.author}</Link>
         </div>
       ))}
