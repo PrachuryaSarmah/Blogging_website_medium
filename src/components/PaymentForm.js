@@ -19,8 +19,8 @@ const PaymentForm = () => {
   };
 
   return (
-    <div className='container'>
-      <h2>Choose Subscription Plan</h2>
+    <div className='container1'>
+      <h2 className='headit'>Choose Subscription Plan</h2>
       <label>
         
         1 post per day - Free
